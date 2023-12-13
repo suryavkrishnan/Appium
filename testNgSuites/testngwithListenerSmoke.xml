@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<groups>
+		<run>
+		<include name="Smoke"/>
+		</run>
+	</groups>
+    <listeners>
+		<listener class-name="org.appiumProject.TestUtils.TestListeners"/>
+	</listeners>
+    <test thread-count="5" name="Error Validation Test">
+    <classes>
+      <class name="org.AppiumTestCases.eCommerce_TC1"/>
+    </classes>
+  </test> <!-- Test -->
+
+
+<test thread-count="5" name="End to end frame workTest">
+    <classes>
+      <class name="org.AppiumTestCases.eCommerce_TC4_SwitchGoogle"/>
+    </classes>
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->
