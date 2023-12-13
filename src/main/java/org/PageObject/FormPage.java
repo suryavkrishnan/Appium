@@ -67,6 +67,7 @@ public class FormPage extends AndroidActions
 	{
 		country1.click();
 		scrollToText(country);
+		System.out.println("hi this is first commit statement ");
 		driver.findElement(By.xpath("//android.widget.TextView[@text='"+country+"']")).click();
 		
 
